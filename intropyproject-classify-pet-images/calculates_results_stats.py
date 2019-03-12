@@ -66,7 +66,7 @@ def calculates_results_stats(results_dic):
         n_dogs_img += value[3]
         n_match += value[2]
         n_correct_dogs += 1 if value[3] and value[4] else 0
-        n_correct_notdogs += 0 if value[3] and value[4] else 1
+        n_correct_notdogs += 1 if not value[3] and not value[4] else 0
         n_correct_breed += 1 if value[2] and value[3] else 0
 
     n_notdogs_img = images - n_dogs_img

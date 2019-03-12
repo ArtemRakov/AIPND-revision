@@ -1,6 +1,6 @@
 Command Line Arguments:
      dir = uploaded_images/ 
-    arch = alexnet 
+    arch = vgg 
  dogfile = dognames.txt
 
 Pet Image Label Dictionary has 4 key-value pairs.
@@ -12,8 +12,8 @@ Below are 4 of them:
 
      MATCH:
 
-                mug_12323.jpeg: 
-Real:                        mug   Classifier:                     coffee mug
+    Golden_retriever_23223.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
 
     Golden_retriever_23232.jpg: 
 Real:           golden retriever   Classifier:               golden retriever
@@ -23,16 +23,16 @@ Real:                       frog   Classifier:           tree frog, tree-frog
 
  NOT A MATCH:
 
-    Golden_retriever_23223.jpg: 
-Real:           golden retriever   Classifier: cocker spaniel, english cocker spaniel, cocker
+                mug_12323.jpeg: 
+Real:                        mug   Classifier:                       consomme
 
 # Total Images 4 # Matches: 3 # NOT Matches: 1
 
      MATCH:
 
-                mug_12323.jpeg: 
-Real:                        mug   Classifier:                     coffee mug  
-PetLabelDog: 0  ClassLabelDog: 0
+    Golden_retriever_23223.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
 
     Golden_retriever_23232.jpg: 
 Real:           golden retriever   Classifier:               golden retriever  
@@ -44,26 +44,25 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
-    Golden_retriever_23223.jpg: 
-Real:           golden retriever   Classifier: cocker spaniel, english cocker spaniel, cocker  
-PetLabelDog: 1  ClassLabelDog: 1
+                mug_12323.jpeg: 
+Real:                        mug   Classifier:                       consomme  
+PetLabelDog: 0  ClassLabelDog: 0
 
 # Total Images 4 # Matches: 3 # NOT Matches: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
 
     Number of Images: 4
     Number of Dog Images: 2,
     Number of 'Not-a' Dog Images: 2
     % Correct Dogs:  100.0
-    % Correct Breed: 50.0
+    % Correct Breed: 100.0
     
-Filename: Golden_retriever_23223.jpg  Label: cocker spaniel, english cocker spaniel, cocker
 
-** Total Elapsed Runtime: 0:0:0
+** Total Elapsed Runtime: 0:0:1
